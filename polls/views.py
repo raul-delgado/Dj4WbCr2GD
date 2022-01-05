@@ -6,6 +6,10 @@ from django.shortcuts import get_object_or_404,render
 from django.urls import reverse
 from django.views import generic
 
+
+def owner(request):
+    return HttpResponse("Hello, world. 8eb7be5a is the polls owner.")
+
 #def index(request):
 #    latest_question_list = Question.objects.order_by('-pub_date')[:5]
 #    output = ', '.join([q.question_text for q in latest_question_list])
