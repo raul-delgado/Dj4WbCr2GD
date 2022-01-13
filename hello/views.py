@@ -23,10 +23,9 @@ logger = logging.getLogger(__name__)
 def helloworld(request):
     logging.error('Hello world DJ4E in the log...')
     print('Hello world DJ4E in a print statement...')
-    response = HttpResponse("""<html><body><p>Hello world DJ4E in HTML</p>
-    <p>This sample code is available at
-    <a href="https://github.com/csev/dj4e-samples">
-    https://github.com/csev/dj4e-samples</a></p>
+    response = HttpResponse("""<html><body><p>Hello world 4badf6fc in HTML</p>
+     <li><a href="cookie">If you give a browser a cookie...</a></li>
+    <li><a href="sessfun">Fun with sessions</a></li>
     </body></html>""")
     response.set_cookie('dj4e_cookie', '4badf6fc', max_age=1000)
     #response.set_cookie('dj4e_cookie', 42, max_age=1000)
